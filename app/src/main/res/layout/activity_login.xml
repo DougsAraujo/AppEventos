@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/colors_gradient"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    tools:context=".Activity.LoginActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/eventos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="108dp"
+                android:textSize="45dp"
+                android:fontFamily="cursive"
+                android:textColor="@color/branco"
+                android:text="@string/eventos" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="32dp"
+            android:hint="@string/email_cadastro"
+            android:textColorHint="@color/branco"
+            android:layout_marginRight="32dp"
+            android:layout_marginTop="20dp">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/valor_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:textColor="@color/branco"
+                android:layout_centerHorizontal="true"
+                android:layout_weight="1"
+                android:drawableLeft="@drawable/ic_email"
+                android:ems="10"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="32dp"
+            android:hint="@string/senha_cadastro"
+            android:textColorHint="@color/branco"
+            android:layout_marginRight="32dp"
+            android:layout_centerVertical="true">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/valor_senha"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/branco"
+                android:layout_below="@+id/valor_email"
+                android:layout_centerHorizontal="true"
+                android:layout_weight="1"
+                android:drawableLeft="@drawable/ic_senha"
+                android:ems="10"
+                android:inputType="textPassword"
+                android:visibility="visible" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:id="@+id/bt_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:textSize="17dp"
+            android:text="@string/login"
+            android:background="@drawable/botao_customizado"
+            android:textColor="@color/cinza"/>
+
+        <Button
+            android:id="@+id/bt_cadastro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="30dp"
+            android:textSize="17dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:background="@drawable/botao_customizado"
+            android:text="@string/cadastro"
+            android:textColor="@color/cinza" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

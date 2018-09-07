@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="vermelho">#F44336</color>
+    <color name="amarelo">#FF9800</color>
+    <color name="vermelhoescuro">#f64f59</color>
+    <color name="tollbar">#c471ed</color>
+    <color name="preto">#000</color>
+    <color name="cinza">#757575</color>
+    <color name="fundo">#f5f5f5</color>
+    <color name="branco">#FFFFFF</color>
+    <color name="azul">#12c2e9</color>
+</resources>

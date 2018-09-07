@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Eventos</string>
+    <string name="email">E-mail:</string>
+    <string name="eventos">Eventos</string>
+    <string name="senha">Senha:</string>
+    <string name="login">Login</string>
+    <string name="confirmar">Confirmar</string>
+    <string name="cadastro">Cadastro</string>
+    <string name="nome">Nome</string>
+    <string name="sobrenome">Sobrenome</string>
+    <string name="senha_cadastro">Senha</string>
+    <string name="datanasc">Data de Nascimento</string>
+    <string name="email_cadastro">E-mail</string>
+    <string name="celular">Celular</string>
+</resources>

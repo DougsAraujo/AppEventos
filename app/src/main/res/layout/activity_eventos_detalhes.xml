@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/colors_gradient"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".Activity.EventosDetalhes">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/tb_detalhe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:titleTextColor="@color/branco"/>
+
+
+        <LinearLayout
+            android:layout_margin="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/nome_detalhe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:text="detalhes"
+                android:textColor="@color/branco"
+                android:textSize="25dp"
+                android:textStyle="bold"/>
+
+
+            <android.support.v7.widget.CardView
+                android:layout_width="370dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@color/amarelo"
+                app:cardCornerRadius="4dp"
+                app:cardElevation="8dp"/>
+
+                <ImageView
+                    android:id="@+id/imagem_detalhe"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/cinza"
+                    android:scaleType="centerCrop" />
+
+
+
+        </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/local"
+                    android:textSize="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="8dp"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_local"
+                    android:text="local"
+                    android:textColor="@color/branco" />
+
+                <TextView
+                    android:id="@+id/data"
+                    android:textSize="20dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_calendario"
+                    android:text="Data"
+                    android:textColor="@color/branco" />
+
+                <TextView
+                    android:id="@+id/preco"
+                    android:layout_marginLeft="8dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_cifrao"
+                    android:text="valor"
+                    android:textSize="20dp"
+                    android:textColor="@color/branco" />
+
+
+                    <TextView
+                        android:id="@+id/descricao"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="10dp"
+                        android:textSize="20dp"
+                        android:text="Descricao"
+                        android:textColor="@color/branco" />
+
+                    <Button
+                        android:id="@+id/bt_comprar"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="40dp"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginRight="40dp"
+                        android:textSize="17dp"
+                        android:layout_marginTop="30dp"
+                        android:background="@drawable/botao_customizado"
+                        android:text="Comprar"
+                        android:textColor="@color/cinza" />
+
+                </LinearLayout>
+            </LinearLayout>
+    </RelativeLayout>
+</ScrollView>
